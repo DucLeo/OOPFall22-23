@@ -13,8 +13,10 @@ repositories {
 }
 
 dependencies {
+    implementation("com.ruimo:csvparser_3:1.3")
     testImplementation(kotlin("test"))
-    implementation("com.google.code.gson:gson:2.9.1")
+    implementation("com.google.code.gson:gson:2.10")
+    implementation("org.apache.commons:commons-csv:1.5")
 }
 
 tasks.test {
