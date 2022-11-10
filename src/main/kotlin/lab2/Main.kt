@@ -6,12 +6,12 @@ fun main() {
         val path = readln()
         if (path != "exit") {
             try {
-                val start = System.currentTimeMillis()
+                val begin = System.currentTimeMillis()
                 val data = ReadFiles(path)
                 duplicate(data.addresses)
                 storeyBuildings(data.addresses)
                 val end = System.currentTimeMillis()
-                println("Processing time: ${end - start} milliseconds.")
+                println("Processing time: ${end - begin} milliseconds.")
             } catch (e: Exception) {
                 println(e.message)
             }
